@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADB &amp; Fastboot Tool"
+        android:textSize="24sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/btnCheckAdb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Check ADB Devices" />
+
+    <Button
+        android:id="@+id/btnCheckFastboot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Check Fastboot Devices" />
+
+    <Button
+        android:id="@+id/btnFlashImg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Flash IMG (Mock)" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log Output:"
+        android:layout_marginTop="20dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#EEE"
+        android:padding="5dp">
+        
+        <TextView
+            android:id="@+id/txtLog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ready..."
+            android:fontFamily="monospace"/>
+    </ScrollView>
+
+</LinearLayout>
